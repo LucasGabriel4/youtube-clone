@@ -1,0 +1,166 @@
+
+header.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.3%;
+
+   
+    
+ 
+
+}
+
+
+.menu__icon {
+ padding: 0.5rem 0.7rem 0.4rem 0.7rem;
+ border-radius: 50%;
+ cursor: pointer;
+
+   
+   
+}
+
+.menu__icon img{
+    width: 1rem;
+}
+
+
+.menu__icon:hover{
+    background-color: var(--gray_2--);
+    
+}
+
+.header__container-menu-logo{
+    display: flex;
+    align-items: center;
+    
+
+}
+    
+.header__container-logo{
+  width: 100px;
+  
+}
+
+.header__container-menu-logo > span{
+    display: block;
+    color: #ccc;
+    font-size: 0.6rem;
+    position: relative;
+    top: -5px;
+    right: 8px;
+}
+
+
+.header__container-input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.header__container-search{
+    width:100%;
+    max-width: 450px;
+    height: 30px;
+    line-height: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid var(--gray--);
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+    background-color: var(--dark--) ;
+    
+}
+
+
+.header__container-search:focus{
+    outline: 0;
+}
+
+.header__container-search-icon{
+    background-color: var(--gray_2--);
+    padding: 9px 18px 10px 20px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    
+}
+
+.header__container-search-mic{
+    margin-left: 0.7rem;
+    background-color: #3030304f;
+    padding: 7px 12px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+
+.header__container-search-mic:hover{
+    background-color: var(--gray_2--);
+
+}
+
+
+.header__container-icons{
+    display: flex;
+}
+
+
+.header__container-profile-img{
+    background-color: var(--gray--);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.header__container-icons .icon + .icon{
+   margin-left: 1.7rem;
+   
+}
+
+.header__container-icons > span{
+ color: white;
+ display: block;
+ font-size: 0.8rem;
+ background-color: var(--red--);
+ width:18px;
+ height: 18px;
+ line-height: 18px;
+ border-radius: 50%;
+ padding-left: 5px;
+ position: relative;
+ right: 10px;
+ 
+}
+
+.header__container-profile-img{
+    background-image: url(../img/channel_profile/profile.jpg);
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 768px){
+    .header__container-search{
+        display: none;
+    }
+
+    .header__container-search-icon{
+        background-color: transparent;
+    }
+
+    .header__container-input{
+        justify-content: end;
+        padding: 0 3%;
+    }
+
+    
+.header__container-search-mic{
+    margin-left: 0;
+  
+}
+
+}

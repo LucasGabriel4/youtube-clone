@@ -1,0 +1,32 @@
+.options__container{
+    display: flex;
+    gap: 10px 10px;
+    flex-wrap: wrap ;
+    /* padding-left: 0.9rem; */
+   
+}
+
+
+.options__container-item{
+    background-color: var(--gray_2--);
+    padding: 10px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+
+
+.options__container-item p{
+    color: var(--white--);
+    font-size: 0.8rem;
+}
+
+
+.options__container-item:hover{
+    background-color: var(--gray--);
+}
+
+
